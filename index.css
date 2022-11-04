@@ -1,0 +1,146 @@
+body{
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* 
+...................
+layout navabr
+...................
+*/
+header{
+    padding: 2em 0;
+    background-color: #F8F8F8;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+nav a{
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+nav li{
+    margin-left: 2em;
+}
+.container-nav{
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+/* 
+
+.................
+typography for navbar
+................
+*/
+.container-nav h1{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+.container-nav p{
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+/* sections layout starts from here 
+...................................
+...................................
+*/
+.sections-container{
+    max-width: 900px;
+    margin: 2em auto;
+}
+.sections{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    max-width: 100%;
+}
+.col-1{
+    width: 22%;
+}
+.col-2{
+    width: 47%;
+}
+
+.col-2-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* typography for sections
+..................
+*/
+.about-me{
+    border: 20px solid #EBEBEB;
+    padding:.5em;
+}
+.about-me h2{
+    /* font-family: ubuntu; */
+    font-weight: bold;
+    font-size:1.2rem;
+    letter-spacing: .2rem;
+}
+.about-me p{
+    font-weight: light;
+    font-family: ubuntu;
+    line-height: 1.5rem;
+}
+.recent-posts{
+    border: 20px solid #EBEBEB;
+    padding: .5em;
+}
+h2{
+    color: #143774;
+}
+.col-1-container img{
+height:15em;
+}
+.margin-top-bottom{
+    margin:2em 0;
+}
+/* media screen for navbar starts from here */
+@media (max-width:772px){
+    /* breaking the navbar when the screen size reaches to 772px */
+    .container-nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        margin:.5em 0
+    }
+    header{
+        text-align: center;
+    }
+    /* breaking the sections when the screen size reaches to 772px */
+    .sections{
+        flex-direction: column;
+    }
+    .col-1{
+        width: 100%;
+    }
+    .col-2{
+        width: 100%;
+    }
+    .col-1-container img{
+        height:auto;
+    }
+}
