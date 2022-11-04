@@ -115,6 +115,14 @@ height:15em;
 .margin-top-bottom{
     margin:2em 0;
 }
+footer{
+    text-align: center;
+    background-color: #143774;
+    padding: 2em;
+}
+footer p{
+    margin: 0 0;
+}
 /* media screen for navbar starts from here */
 @media (max-width:772px){
     /* breaking the navbar when the screen size reaches to 772px */
@@ -142,5 +150,11 @@ height:15em;
     }
     .col-1-container img{
         height:auto;
+    }
+    .margin-top-bottom{
+        margin: 2em 2em
+    }
+    .sections-container{
+        margin:0 1em;
     }
 }
